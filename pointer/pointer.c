@@ -20,3 +20,13 @@ int main() {
 
 	return 0;
 }
+
+/* notes
+ * ln.19 *p performs "dereferencing" operation on
+ * p; it looks at the address stored in p, and
+ * goes to that address and returns the value.
+ *
+ * The pointer is init. to point to a specifc
+ * mem.addr before it is used. Always init. 
+ * pointers this way.
+ */
