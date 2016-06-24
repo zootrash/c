@@ -1,20 +1,11 @@
-# compiler: gcc
-CC = gcc
+objects = array.o
 
-# compiler flags:
-# -g	adds debugging info to exec. file
-# -Wall	turns most, not all, compiler warnings
-CFLAGS = -g -Wall
+watevz : $(objects)
+	gcc -Wall -o array $(objects)
 
-# build target exec.
-TARGET = array 
+%.o : %.c
+	gcc -Wall -c -g $<
 
-# make
-# gcc -g -Wall -o myprog myprog.c
-all: $(TARGET)
-
-$(TARGET): $(TARGET).c
-	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).c
-
-clean:
-	$(RM) $(TARGET)
+clean :
+	rm -f array 
+	rm -f $(objects)
