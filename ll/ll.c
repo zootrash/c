@@ -13,7 +13,7 @@ int main() {
 	struct node *root;
 	struct node *conductor;
 	
-	root = malloc(size(struct node));
+	root = malloc(sizeof(struct node));
 	root->next = 0;
 	root->x = 12;
 
