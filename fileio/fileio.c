@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+
+/*** NOT FINISHED ***/
+
 /* C File I/O and Binary File I/O */
 
 int main() {
