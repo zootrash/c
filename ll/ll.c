@@ -8,6 +8,7 @@ struct node {
 	struct node *next;
 };
 
+/* main */
 int main() {
 
 	struct node *root;
